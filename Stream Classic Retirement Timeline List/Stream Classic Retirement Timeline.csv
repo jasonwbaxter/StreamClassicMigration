@@ -1,0 +1,9 @@
+Title,Date,Description
+"No new Stream (Classic) web part can be created","8/15/2023","Check web part transition timeline for details"
+"No new videos can be uploaded to Stream (Classic) for any customers","9/15/2023",
+"New Stream webpart GA","9/15/2023","Users can configure a video or group of videos from a folder on a SharePoint page using the new web part. Check web part transition timeline for details."
+"No new Stream live events can be created, any Stream live event scheduled after September 15, 2023 will be automatically removed.","9/15/2023","See Stream live events retirement FAQ for more info."
+"Users no longer able to access or use Stream (Classic)","10/15/2023","Users no longer able to access or use Stream (Classic) unless admin takes action to delay this change. This change can be delayed until April 15, 2024."
+"Stream (Classic) is fully retired & automatically disabled","4/15/2024","Users & admins no longer able to access or use Stream (Classic)
+Any remaining content in Stream (Classic) that wasn't migrated will be deleted"
+"Stream (Classic) links and embed codes will no longer redirect to the migrated videos in OneDrive & SharePoint","2/15/2025","Stream (Classic) links and embed codes will no longer redirect to the migrated videos in OneDrive & SharePoint"

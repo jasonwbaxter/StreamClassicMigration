@@ -1,0 +1,44 @@
+Title,Question,Answer,ShowMore
+"Are my videos copied or moved during migration? Are they available in Stream Classic after they migrate?","Are my videos copied or moved during migration? Are they available in Stream Classic after they migrate?","We make a copy of the video and upload that into SharePoint or OneDrive. Simultaneously, we hide or soft delete the video from Stream (Classic) after it's migrated. We will hard deleted the video when Stream (Classic) infra deprecates.",
+"Can I change the name of 'Stream migrated videos' folder created during migration?","Can I change the name of 'Stream migrated videos' folder created during migration?","No, if you do that, the redirection links stop working. However, we have a work item in our backlog, where we plan to change the redirection logic such that users will be able to change the name of the folder and move the video within the same SharePoint site without breaking the redirection links.",
+"Can i move a container's video to two different locations","Can i move a container's video to two different locations","We don't promote migrating videos in a container to different locations",
+"Does the old Stream Classic web part support Stream 2.0 videos?","Does the old Stream Classic web part support Stream 2.0 videos?","No, Stream Classic web part won’t support Stream (on SharePoint) videos. You’ll have to use other web parts – File and Media, Highlighted content, Hero and List web parts. Once available, we would recommend you to use the new Stream web part.",
+"How do i configure a playlist?","How do i configure a playlist?","Microsoft 365 Playlists feature is built on top of Microsoft Lists template. It's backed by Stream on SharePoint. Now, you can arrange your video and audio files into a playlist for easy organization, sharing, and playback","https://learn.microsoft.com/en-us/stream/streamnew/stream-playlists"
+"How do I share/publish playlists from the Stream (on SharePoint)?","How do I share/publish playlists from the Stream (on SharePoint)?","Currently, there's no way to do that. However, users can configure and consume playlists in the list web part, which is coming soon. Other way is via new Stream web part, which is coming soon.",
+"How do I share/publish videos from Stream (on SharePoint) via web parts?","How do I share/publish videos from Stream (on SharePoint) via web parts?","One way to configure is using File and Media, Hero and Highlighted content web parts.Other way is via new Stream web part, which is coming soon.",
+"How does video playback work?","How does video playback work?","OneDrive and SharePoint video playback uses different playback technology depending on the video bitrate. Our Microsoft Stream player engine detects the optimal way to play the video for the best playback experience and performance.
+
+Smaller videos (<3 Mbps bitrate or video itself is <5 Mb) - Use progressive playback, so the video needs to be created with a video codec supported by the browser and the device
+
+Medium bitrate videos (3-50 Mbps) - Use ""just in time"" encoding to do adaptive bitrate streaming on the fly when a user plays the video and caches AES-128 encrypted parts of the video on the Azure Front Door CDN as many people play the video from the same geographic region
+
+Microsoft Teams meeting recordings - Use a single bitrate that is streamed via encrypted chunks via CDN the same as medium bitrate videos above
+
+Large bitrate videos (50+ Mbps) - Can't be played in the service and can be only downloaded for local playback",
+"How my end users can discover migrated content?","How my end users can discover migrated content?","We mirror permissions when videos migrate from Stream (Classic) to Stream (on SharePoint). Each user who has access to a video is Stream (Classic) retains access to migrated video. End users can find the video via search in Stream (on SharePoint) if the video has migrated or in Stream (classic) for a non migrated video.",
+"How will storage quota work?","How will storage quota work?","Videos in Stream (on SharePoint) consume the existing file storage quota from OneDrive and SharePoint.
+
+You should note that Teams meeting recordings make up most of many customers’ Stream (Classic) storage. The fact that meeting recordings have shifted heavily to OneDrive means most meetings won’t consume your SharePoint storage quota.
+
+Customers who migrate videos from Stream (Classic) to Stream (on SharePoint) won't be granted extra storage. If you need more storage, you'll need to purchases storage for SharePoint.",
+"How would users republish channels configured in Classic web part post migration?","How would users republish channels configured in Classic web part post migration?","Users need to manually reconfigure the migrated channels post their support end. Channel videos are migrated in folder. User can create a playlist out of the videos in the folder or use a SharePoint Hero and Highlighted content web parts.
+
+Post availability of the new Stream web part, 
+
+Users can use the new Stream web part to publish videos from the migrated folder.
+Users can also create a playlist out of videos in the migrated folder and publish them using the new Stream web part.",
+"Is there still a Stream application?","Is there still a Stream application?","Yes! Even though all the videos are normal files in SharePoint, Teams, OneDrive, and Yammer, Stream remains a part of the suite. Stream is the application and experience that empowers you to record, upload, discover, share, manage, and play video stored in Microsoft 365.",
+"What information is available regarding Analytics ?","What information is available regarding Analytics ?","Understand your audience and give them content that’s relevant to them by gaining insights from analytics on videos you publish.
+
+The following analytics are available for any video file in Microsoft 365:
+
+Trend of views and unique visitors over time
+Viewership retention - which part of the video was viewed
+Who watched a specific video
+Site analytics - see overall traffic, popular content, and usage insights for videos in your site","https://learn.microsoft.com/en-us/stream/streamnew/video-analytics-viewership-retention"
+"What is happening with Stream live events?","What is happening with Stream live events?","Stream live events is being replaced by Teams live events. Teams is working on the feature to have an external encoder via RTMP/RTMPS ingest into a Teams live event. (See Roadmap ID: 84960) When this feature is available we'll send notice about the retirement of Stream (Classic) live events.",
+"What video formats and codecs are supported?","What video formats and codecs are supported?","Most common audio and video formats and codecs are supported.",
+"Where will video files be stored?","Where will video files be stored?","Videos in Stream (on SharePoint) will be stored in the same place you store your Office files, in Teams, SharePoint, OneDrive, and Yammer. Stream will enhance those videos—powering the playback and adding intelligent video experiences on top.",
+"Which SharePoint web parts do I use?","Which SharePoint web parts do I use?","The ""Stream"" web part only works for Stream (Classic) content, it doesn't work with videos from OneDrive or SharePoint.
+
+To feature videos uploaded to OneDrive & SharePoint on SharePoint pages, you can use the File and Media web part for a single video and the Highlighted content web part for a set of videos.",
