@@ -29,33 +29,31 @@ https://pnp.github.io/powershell/cmdlets/Connect-PnPOnline.html#examples
 5. Run Invoke-pnpsitetemplate
 
 ```
-Invoke-PnPSiteTemplate -Path C:\temp\template.pnp -ExcludeHandlers SiteSecurity
+Invoke-PnPSiteTemplate -Path C:\temp\template.pnp -ExcludeHandlers SiteSecurity -ClearNavigation
 
 
 ```
-![
-    
-](image-4.png)
+![Alt Text](image-4.png)
+
 ![Alt text](image-5.png)
 More info:
 https://pnp.github.io/powershell/cmdlets/Invoke-PnPSiteTemplate.html#examples 
 
-## Results with the limited Template
+6. Fix the Twitter handle to @MicrosoftStream
+
+## Results with the Template
 
 ![Alt text](image-6.png)
 
-![Alt text](image-7.png)
-
 ![Alt text](image-8.png)
 
-### FAQ List view JSON
+7. FAQ List view JSON
 
 https://github.com/pnp/List-Formatting/blob/master/view-samples/faq-accordion/faq-accordion.json
 
-Copy this JSON , go to the list Select All Items View , Ensure all the columns are added and group by Question.
+Copy this JSON , go to the list Select All Items View , Ensure all the required columns are added and group by Question.
 
 Format the view and past the JSON in the advanced section.
-
 
 
 ### Large files workaround
