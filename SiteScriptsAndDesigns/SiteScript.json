@@ -1,0 +1,40 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      
+      {
+        "verb": "applyTheme",
+        "themeName": "Blue Yonder"
+      },
+      {
+        "verb": "joinHubSite",
+        "hubSiteId": "<InsertHubID>"
+      },
+      {
+        "verb": "setSiteLogo",
+        "url": "/Style Library/logo.jpg"
+      },
+      {
+        "verb": "setSiteExternalSharingCapability",
+        "capability": "Disabled"
+      },
+      {
+        "verb": "setSiteBranding",
+        "navigationLayout": "Megamenu",
+        "headerLayout": "Compact",
+        "headerBackground": "Strong",
+        "showFooter": true
+      },
+      {
+        "verb": "setRegionalSettings",
+        "timeZone": 50, 
+        "locale": 7177,
+        "sortOrder": 25, 
+        "hourFormat": "24"
+      }
+
+    ],
+    "bindata": { },
+    "version": 1
+  }
+  
